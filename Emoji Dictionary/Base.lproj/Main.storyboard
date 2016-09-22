@@ -59,8 +59,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ur0-mO-AyC">
+                                <frame key="frameInset" minX="92" minY="429" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGq-fD-S0K">
+                                <frame key="frameInset" minX="91" minY="480" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Church during a wedding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-1J-022">
-                                <frame key="frameInset" minX="89" minY="329" width="193" height="21"/>
+                                <frame key="frameInset" minX="92" minY="381" width="193" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,14 +80,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aWS-1J-022" firstAttribute="top" secondItem="cuT-G7-ESy" secondAttribute="bottom" constant="24" id="ARk-Cf-PhR"/>
                             <constraint firstItem="aWS-1J-022" firstAttribute="centerX" secondItem="jEO-X8-ryg" secondAttribute="centerX" id="CP7-MP-EHJ"/>
                             <constraint firstItem="cuT-G7-ESy" firstAttribute="top" secondItem="wLt-gj-pmZ" secondAttribute="bottom" constant="40" id="KHt-03-dju"/>
-                            <constraint firstItem="aWS-1J-022" firstAttribute="top" secondItem="cuT-G7-ESy" secondAttribute="bottom" constant="30" id="Mf6-1B-9Am"/>
+                            <constraint firstItem="oGq-fD-S0K" firstAttribute="top" secondItem="ur0-mO-AyC" secondAttribute="bottom" constant="20" id="PTU-Ek-8Fr"/>
+                            <constraint firstItem="ur0-mO-AyC" firstAttribute="centerX" secondItem="jEO-X8-ryg" secondAttribute="centerX" id="XgV-Uz-Fm2"/>
                             <constraint firstItem="cuT-G7-ESy" firstAttribute="centerX" secondItem="jEO-X8-ryg" secondAttribute="centerX" id="cZB-Es-cLD"/>
+                            <constraint firstItem="ur0-mO-AyC" firstAttribute="top" secondItem="aWS-1J-022" secondAttribute="bottom" constant="20" id="hXN-1P-To1"/>
                             <constraint firstItem="aWS-1J-022" firstAttribute="centerX" secondItem="jEO-X8-ryg" secondAttribute="centerX" id="l33-31-yyD"/>
+                            <constraint firstItem="oGq-fD-S0K" firstAttribute="centerX" secondItem="jEO-X8-ryg" secondAttribute="centerX" id="q1U-4e-fN2"/>
+                            <constraint firstItem="aWS-1J-022" firstAttribute="centerX" secondItem="jEO-X8-ryg" secondAttribute="centerX" id="wOe-HV-Msb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="ur0-mO-AyC" id="nV3-7W-EGq"/>
+                        <outlet property="createdLabel" destination="oGq-fD-S0K" id="w54-sC-caL"/>
                         <outlet property="definitionLabel" destination="aWS-1J-022" id="glU-oA-iFC"/>
                         <outlet property="emojiLabel" destination="cuT-G7-ESy" id="smX-Ir-ljq"/>
                     </connections>

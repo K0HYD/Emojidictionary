@@ -10,6 +10,8 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    @IBOutlet var createdLabel: UILabel!
+    @IBOutlet var categoryLabel: UILabel!
     @IBOutlet var definitionLabel: UILabel!
     @IBOutlet var emojiLabel: UILabel!
     var emoji = "NO EMOJI"
@@ -22,13 +24,17 @@ class DefinitionViewController: UIViewController {
         emojiLabel.text = emoji
         
         if emoji == "✈️" {
-        definitionLabel.text = "An airplane to fly away"
+            definitionLabel.text = "An airplane to fly away"
+            categoryLabel.text = "Travel"
+            createdLabel.text = "2014"
         }
         if emoji == "😜" {
-            definitionLabel.text = "Winking faced with stuck out tounge"
+            definitionLabel.text = "Winking faced with stuck out tonuge"
+            categoryLabel.text = "Smiley"
+            createdLabel.text = "2013"
         }
         if emoji == "👲" {
-            definitionLabel.text = "A dude with sunglasses"
+            definitionLabel.text = "A man with Chinese cap"
         }
         if emoji == "🍾" {
             definitionLabel.text = "Champagne for a celebration"
